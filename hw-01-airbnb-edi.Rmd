@@ -2,6 +2,8 @@
 title: "HW 01 - Airbnb listings in Edinburgh"
 Author: "Moriah Ruggerio"
 output: 
+  pdf_document:
+    latex_engine: xelatex
   tufte::tufte_html:
     css: ../hw.css
     tufte_variant: "envisioned"
@@ -172,7 +174,7 @@ edibnb_top_5 %>%
             sd(price, na.rm = TRUE)) 
   
 ```
-The top 5 highest priced neighbourhoods (by median) have means ranging from 99 - 136. They are skewed to the high end with most having a maximum of at least 900, however, Stockbridge only has a maximum of 750. Bruntsfield has the lowest minimum pricing at 10. The minimums ranged from 10-19. The IQRs were fairly consistent ranging from 73 (Bruntsfield) to 86 (New Town). The standard deviations ranged from 90 (Bruntsfield) to 110 (Old Town). From the visualization we can see that Stockbridge has the most centralized or evenly distributed data and utimately the most consistent pricing. For each neighborhood, the data is unimodal with a prominent peak.
+The top 5 highest priced neighbourhoods (West End, Stockbridge, Old Town, New Town and Bruntsfield [technially Bruntsfield, Marchmont, and Southside are all tied for 5th]) have means ranging from 99 - 136. They are skewed to the high end with most having a maximum of at least 900, however, Stockbridge only has a maximum of 750. Bruntsfield has the lowest minimum pricing at 10. The minimums ranged from 10-19. The IQRs were fairly consistent ranging from 73 (Bruntsfield) to 86 (New Town). The standard deviations ranged from 90 (Bruntsfield) to 110 (Old Town). From the visualization we can see that Stockbridge has the most centralized or evenly distributed data and utimately the most consistent pricing. For each neighborhood, the data is unimodal with a prominent peak.
 
 5.  Create a visualization that will help you compare the distribution of review scores (`review_scores_rating`) across neighbourhoods. You get to decide what type of visualisation to create and there is more than one correct answer! In your answer, include a brief interpretation of how Airbnb guests rate properties in general and how the neighbourhoods compare to each other in terms of their ratings.
 
